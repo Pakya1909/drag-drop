@@ -1,0 +1,298 @@
+<!-- navbar starts -->
+<div class="container-fluid">
+     <div class="row">
+
+          <div class="col-2">
+               <h2 class="navbar-brand">LOGO</h2>
+          </div>
+          <div class="col-10">
+               <nav class="navbar navbar-expand-lg bg-light">
+                    <button type="button" class="btn btn-primary text-end">Deploy</button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                              <li class="nav-item dropdown">
+                                   <a class="nav-link dropdown-toggle text-end" href="#" id="navbarDropdown"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        Sign Up
+                                   </a>
+                                   <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                        <li><a class="dropdown-item" href="#">login</a></li>
+                                        <li><a class="dropdown-item" href="#">logout</a></li>
+                                        <li><a class="dropdown-item" href="#">setting</a></li>
+                                   </ul>
+                              </li>
+                         </ul>
+                    </div>
+               </nav>
+          </div>
+     </div>
+</div>
+<!-- navbar ends -->
+
+<div class="container-fluid">
+     <div class="row">
+          <!-- left content starts -->
+          <div class="col-2">
+               <br>
+               <h3>Filler Node</h3>
+               <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                         <h2 class="accordion-header" id="headingOne">
+                              <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                   Input
+                              </button>
+
+                         </h2>
+                         <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
+                              data-bs-parent="#accordionExample">
+                              <div *ngFor="let item of input" class="accordion-body">
+                                   <button (click)="nameoftheitem(item)" class="btn btn-light" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                        aria-controls="offcanvasRight">{{item}}</button>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="accordion-item">
+                         <h2 class="accordion-header" id="headingTwo">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                   Output
+                              </button>
+                         </h2>
+                         <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                              data-bs-parent="#accordionExample">
+                              <div *ngFor="let item of output" class="accordion-body">
+                                   <button (click)="nameoftheitem(item)" class="btn btn-light" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                        aria-controls="offcanvasRight">{{item}}</button>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="accordion-item">
+                         <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                   Function
+                              </button>
+                         </h2>
+                         <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                              data-bs-parent="#accordionExample">
+                              <div *ngFor="let item of function" class="accordion-body">
+                                   <button (click)="nameoftheitem(item)" class="btn btn-light" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                        aria-controls="offcanvasRight">{{item}}</button>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="accordion-item">
+                         <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                                   Social
+                              </button>
+                         </h2>
+                         <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                              data-bs-parent="#accordionExample">
+                              <div *ngFor="let item of social" class="accordion-body">
+                                   <button (click)="nameoftheitem(item)" class="btn btn-light" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                        aria-controls="offcanvasRight">{{item}}</button>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="accordion-item">
+                         <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                                   Storage
+                              </button>
+                         </h2>
+                         <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                              data-bs-parent="#accordionExample">
+                              <div *ngFor="let item of storage" class="accordion-body">
+                                   <button (click)="nameoftheitem(item)" class="btn btn-light" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                        aria-controls="offcanvasRight">{{item}}</button>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="accordion-item">
+                         <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseSix">
+                                   Analysis
+                              </button>
+                         </h2>
+                         <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                              data-bs-parent="#accordionExample">
+                              <div *ngFor="let item of analysis" class="accordion-body">
+                                   <button (click)="nameoftheitem(item)" class="btn btn-light" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                        aria-controls="offcanvasRight">{{item}}</button>
+                              </div>
+                         </div>
+                    </div>
+                    <div class="accordion-item">
+                         <h2 class="accordion-header" id="headingThree">
+                              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                   data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseSeven">
+                                   Adanced
+                              </button>
+                         </h2>
+                         <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                              data-bs-parent="#accordionExample">
+                              <div *ngFor="let item of advanced" class="accordion-body">
+                                   <button (click)="nameoftheitem(item)" class="btn btn-light" type="button"
+                                        data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight"
+                                        aria-controls="offcanvasRight">{{item}}</button>
+                              </div>
+                         </div>
+                    </div>
+               </div>
+          </div>
+          <!-- left content ends -->
+
+          <!-- middle content starts -->
+          <div class="col-7">
+               <div class="text-end">
+                    <mat-checkbox #selectAfterAdding> Select tab after adding </mat-checkbox>
+                    <button mat-raised-button class="example-add-tab-button"
+                         (click)="addTab(selectAfterAdding.checked)">
+                         Add new tab
+                    </button>
+               </div>
+               <mat-tab-group [selectedIndex]="selected.value" (selectedIndexChange)="selected.setValue($event)">
+                    <mat-tab *ngFor="let tab of tabs; let index = index" [label]="tab">
+                         <button mat-raised-button class="example-delete-tab-button" [disabled]="tabs.length === 1"
+                              (click)="removeTab(index)">
+                              Delete Tab
+                         </button>
+
+
+                         <div #container class="container" style="background-color: gray;">
+
+                              <div #draggable1 class="draggable">Drag Me</div>
+                              <br><br><br><br><br><br><br><br><br><br>
+                              <div #draggable2 class="draggable">Drag Me</div>
+                         </div>
+
+                    </mat-tab>
+               </mat-tab-group>
+
+          </div>
+          <!-- middle content ends -->
+
+          <!-- right content starts -->
+          <div class="col-3">
+               <br>
+               <nav>
+                    <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                         <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#info"
+                              type="button" role="tab" aria-controls="nav-home" aria-selected="true">Info</button>
+                         <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#history"
+                              type="button" role="tab" aria-controls="nav-profile"
+                              aria-selected="false">History</button>
+                         <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#help"
+                              type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Help</button>
+                         <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#debug"
+                              type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Debug</button>
+                    </div>
+               </nav>
+               <div class="tab-content" id="nav-tabContent">
+                    <div class="tab-pane fade show active" id="info" role="tabpanel" aria-labelledby="nav-home-tab"
+                         tabindex="0">
+                         Info
+                    </div>
+                    <div class="tab-pane fade" id="history" role="tabpanel" aria-labelledby="nav-profile-tab"
+                         tabindex="0">
+                         History
+                    </div>
+                    <div class="tab-pane fade" id="help" role="tabpanel" aria-labelledby="nav-profile-tab" tabindex="0">
+                         Help
+                    </div>
+                    <div class="tab-pane fade" id="debug" role="tabpanel" aria-labelledby="nav-profile-tab"
+                         tabindex="0">
+                         Debug
+                    </div>
+               </div>
+          </div>
+          <!-- right content ends -->
+     </div>
+</div>
+
+
+<!-- filler node configuration starts -->
+<div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+     <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasRightLabel">{{nameofthefillernode}} filler Node</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+     </div>
+     <div class="offcanvas-body">
+          <div class="d-grid gap-2 d-md-flex justify-content-md-start">
+               <button type="button" class="btn btn-danger">Delete</button>
+               <button type="button" class="btn btn-warning">Cancel</button>
+               <button type="button" class="btn btn-success">Done</button>
+          </div>
+          <br>
+
+          <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+               <li class="nav-item" role="presentation">
+                    <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                         data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home"
+                         aria-selected="true">logo1</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                         data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile"
+                         aria-selected="false">logo2</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                         data-bs-target="#pills-contact1" type="button" role="tab" aria-controls="pills-contact"
+                         aria-selected="false">logo3</button>
+               </li>
+               <li class="nav-item" role="presentation">
+                    <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill"
+                         data-bs-target="#pills-contact2" type="button" role="tab" aria-controls="pills-contact"
+                         aria-selected="false">logo4</button>
+               </li>
+
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+               <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                    tabindex="0">
+                    name : <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="name">
+                    <br>
+                    source : <select class="form-select" aria-label="Default select example">
+                         <option selected>Open this select menu</option>
+                         <option value="1">One</option>
+                         <option value="2">Two</option>
+                         <option value="3">Three</option>
+                    </select>
+                    <br>
+                    mode : Clear <input class="form-check-input" type="radio" name="flexRadioDefault"
+                         id="flexRadioDefault1">
+                    Append <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1">
+                    <br>
+                    number of incoming response to wait for : <input type="text" class="form-control"
+                         id="exampleFormControlInput1" placeholder="number of nodes">
+               </div>
+               <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                    tabindex="0">
+                    setting
+               </div>
+               <div class="tab-pane fade" id="pills-contact1" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">
+                    something 1
+               </div>
+               <div class="tab-pane fade" id="pills-contact2" role="tabpanel" aria-labelledby="pills-contact-tab"
+                    tabindex="0">
+                    something 2
+               </div>
+          </div>
+
+     </div>
+     <!-- filler node configuration ends -->
+
+     <router-outlet></router-outlet>
